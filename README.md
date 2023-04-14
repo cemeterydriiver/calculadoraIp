@@ -1,6 +1,8 @@
 # calculadoraIp 🖧
 _CalculadoraIP é um aplicativo de calculadora de endereços IP, construído em JavaScript, HTML e CSS. Ele suporta a conversão de endereços IP entre formatos decimal, binário e hexadecimal, e realiza cálculos como o número de sub-redes, o número de hosts por sub-rede e o endereço de broadcast._
 
+__[CLIQUE AQUI](https://cemeterydriiver.github.io/calculadoraIp/)__ para usar a calculadora!
+
 ## ⚙️Funcionalidades
 - Conversão de endereços IP entre formatos decimal, binário e hexadecimal
 - Cálculo do endereço de broadcast
