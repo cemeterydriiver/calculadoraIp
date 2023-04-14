@@ -72,3 +72,21 @@ function criarCard(texto, valor1, valor2) {
             </div>`
   }
 }
+
+
+function adjustTable() {
+  const table = document.getElementById('result-table');
+  const numCols = window.innerWidth >= 768 ? 4 : 2; // exibe 4 colunas em telas grandes e 2 em telas pequenas
+  for (let i = 0; i < table.rows.length; i++) {
+    const row = table.rows[i];
+    while (row.cells.length > numCols) {
+      row.deleteCell(numCols); // remove as células extras
+    }
+    while (row.cells.length < numCols) {
+      row.insertCell(); // adiciona as células faltantes
+    }
+  }
+}
+
+adjustTable();
+window.addEventListener('resize', adjustTable);

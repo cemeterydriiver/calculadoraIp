@@ -120,7 +120,19 @@ button {
     color: white;
     font-weight: bold;
 }
-
+@media (max-width: 768px) {
+    /* estilos para dispositivos móveis com largura máxima de 768px */
+    .container {
+      flex-direction: column;
+    }
+    .field {
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 100%;
+    }
+  }
+  
 @media screen and (min-width: 900px) {
     .main {
         margin: 20px 60px;
