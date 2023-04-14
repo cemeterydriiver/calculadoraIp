@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IP</title>
+
+   
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Calculadora de IP</h1>
+    </header>
+
+    <main class="main">
+        <section class="inputData">
+            <form>
+                <h2>Digite o IP:</h2>
+                <input type="text" placeholder="Ex:192.168.0.100" pattern="^(\d{1,3}\.){3}\d{1,3}$" maxlength="15" title="Formato decimal incluído os pontos" id="ip" />
+                <h2>Digite a máscara:</h2>
+                <input type="text" placeholder="Ex:255.255.255.0" pattern="^[0-9]{1,3}[.]{1}[0-9]{1,3}[.]{1}[0-9]{1,3}[.]{1}[0-9]{1,3}$" maxlength="15" title="Formato decimal incluído os pontos" id="mascara"/>
+                <p>ou</p>
+                <input type="number" name="mascaraCIDR" placeholder="Ex:/24" pattern="^\d{1,2}$" maxlength="2" title="1 ou 2 dígitos" id="mascaraCIDR" />
+                </br>
+                <button class="button">Calcular</button>
+              </form>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="./js/calculadoraIP.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
+</body>
+
+</html>
